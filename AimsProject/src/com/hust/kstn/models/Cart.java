@@ -71,9 +71,9 @@ public class Cart {
         System.out.println("All items in cart:");
         for (int i = 0; i < qtyOrdered; i++) {
             System.out.println(
-                    (i + 1) + ". [Title]: " + itemsInCart[i].getTitle() + ", [Cost]: " + itemsInCart[i].getCost());
+                    itemsInCart[i].getId() + ": " + itemsInCart[i].getTitle() + " - $" + itemsInCart[i].getCost());
         }
-        System.out.printf("Total cost: %.2f\n", calculateTotalCost());
+        System.out.printf("Total cost: $%.2f\n", calculateTotalCost());
         System.out.println("===============================================");
     }
 }

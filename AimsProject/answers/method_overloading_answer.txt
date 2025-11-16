@@ -1,0 +1,5 @@
+- Chuyện gì xảy ra khi thêm phương thức này, tại sao?
+    + Chương trình bị lỗi biên dịch.
+    + Hai phương thức 'addDVD(DigitalVideoDisc[] discs)' và 'addDVD(DigitalVideoDisc... discs)' được coi là giống nhau nên dẫn đến việc bị trùng lặp phương thức.
+- Bạn lựa chọn phương án nàođể giải quyết?
+    + Bỏ đi phương thức 'addDVD(DigitalVideoDisc[] discs)'.

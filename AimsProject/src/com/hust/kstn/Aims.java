@@ -24,20 +24,10 @@ public class Aims {
             new DigitalVideoDisc("Gladiator", "Action", "Ridley Scott", 155, 24.00),
             new DigitalVideoDisc("Toy Story", "Animation", "John Lasseter", 81, 16.99),
             new DigitalVideoDisc("Avatar", "Science Fiction", "James Cameron", 162, 25.99),
-            new DigitalVideoDisc("Interstellar", "Science Fiction", "Christopher Nolan", 169, 27.50),
-            new DigitalVideoDisc("The Avengers", "Action", "Joss Whedon", 143, 23.99),
-            new DigitalVideoDisc("Coco", "Animation", "Lee Unkrich", 105, 18.50),
             new DigitalVideoDisc("Shrek", "Animation", "Andrew Adamson", 90, 17.00),
             new DigitalVideoDisc("Up", "Animation", "Pete Docter", 96, 19.25)};
 
-        for (DigitalVideoDisc disc : dvds) {
-            cart.addDVD(disc);
-        }
+        cart.addDVD(dvds);
         cart.print();
-
-        cart.removeDVD(dvds[20]);
-        for (DigitalVideoDisc disc : dvds) {
-            cart.removeDVD(disc);
-        }
     }
 }

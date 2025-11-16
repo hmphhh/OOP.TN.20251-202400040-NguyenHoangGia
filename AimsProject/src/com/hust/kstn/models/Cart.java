@@ -16,6 +16,30 @@ public class Cart {
         System.out.println("The disc has been added successfully");
     }
 
+    public void addDVD(DigitalVideoDisc disc1, DigitalVideoDisc disc2) {
+        if (qtyOrdered + 1 >= MAX_NUMBER_ORDERED) {
+            System.out.println("The cart is almost full");
+            return;
+        }
+        itemsInCart[qtyOrdered] = disc1;
+        qtyOrdered++;
+        itemsInCart[qtyOrdered] = disc2;
+        qtyOrdered++;
+        System.out.println("2 discs have been added successfully");
+    }
+
+    public void addDVD(DigitalVideoDisc... discs) {
+        if (qtyOrdered + discs.length - 1 >= MAX_NUMBER_ORDERED) {
+            System.out.println("The cart is almost full");
+            return;
+        }
+        for (DigitalVideoDisc disc : discs) {
+            itemsInCart[qtyOrdered] = disc;
+            qtyOrdered++;
+        }
+        System.out.println(discs.length + " discs have been added successfully");
+    }
+
     public void removeDVD(DigitalVideoDisc disc) {
         if (qtyOrdered == 0) {
             System.out.println("The cart is empty");

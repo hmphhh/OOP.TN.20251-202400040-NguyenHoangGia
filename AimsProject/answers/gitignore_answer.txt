@@ -1,0 +1,11 @@
+- Tại sao những đường dẫn trên nên được thêm vào .gitignore (nếu không thêm thì sao)?
+    + Các đường dẫn trên không phải mã nguồn, chúng phụ thuộc vào IDE của mỗi người. Nếu người này dùng khác IDE với người kia, những file này hoàn toàn vô dụng với họ.
+    Từ đó có thể gây lỗi, gấy rối repo.
+    + Nếu không thêm vào .gitignore, những file này sẽ được pull về máy của tất cả mọi người khi làm việc, từ đó sẽ gây rối và gây lỗi.
+- Nếu sử dụng những công cụ khác để lập trình Java (như IntelliJ IDEA hoặc VSCode), những đường dẫn nào sẽ được thêm vào .gitignore?
+    + Đối với IntelliJ IDEA: .idea/, *.iml, out/
+    + Đối với VSCode: .vscode/, bin/
+- Trong trường hợp bạn đã lỡ commit các file tạm lên Git, nhưng sau đó bạn đã thêm chúng vào .gitignore và muốn Git ngừng theo dõi chúng mà không xóa khỏi máy, bạn sẽ cần thực hiện những thao tác nào?
+    + Thêm các file vào .gitignore,
+    + Xóa các file bị lỗi khỏi mục tracking của Git,
+    + Commit các thay đổi.

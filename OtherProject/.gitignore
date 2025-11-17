@@ -1,0 +1,4 @@
+.vscode/
+bin/
+*.bak
+*.tmp

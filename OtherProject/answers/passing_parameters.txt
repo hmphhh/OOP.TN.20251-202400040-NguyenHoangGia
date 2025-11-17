@@ -1,0 +1,9 @@
+- Tại sao sau khi chạy phương thức swap(s1,s2) thì tên của hai học sinh vẫn không thay đổi? Từ đó, Java là ngôn ngữ truyền tham trị hay truyền tham chiếu?
+    + Thông tin của hai học sinh không thay đổi. 
+    + Do đó, Java là ngôn ngữ truyền tham trị.
+- Bạn làm thế nào để phương thức swap hoạt động (thật sự tráo đổi thông tin của hai đối tượng được truyền vào)?
+    + Sửa phương thức swap. Thay vì swap trực tiếp, ta sẽ swap giá trị của hai đối tượng. 
+    + Chi tiết trong file 'TestingParameters.java'.
+- Vẽ sơ đồ minh họa cho các vùng nhớ stack và heap trong trường hợp này để chứng minh cách bạn đưa ra đã hoạt động đúng.
+    + Sơ đồ nằm trong file 'stack-and-heap.png'.
+

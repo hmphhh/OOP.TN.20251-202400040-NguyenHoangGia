@@ -1,0 +1,1 @@
+Từ khóa super được dùng để truy cập các thành phần (constructor, phương thức, thuộc tính) của lớp cha trực tiếp trong lớp con.

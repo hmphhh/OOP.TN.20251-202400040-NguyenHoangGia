@@ -1,3 +1,1 @@
-Nguyen Hoang Gia - 202400040
-
-OOP
+# OOP.TN.20251-202400040-NguyenHoangGia
